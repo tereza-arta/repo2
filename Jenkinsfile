@@ -4,7 +4,7 @@ pipeline{
     stage('Init stage'){
       steps{
         echo "Hello from init stage"
-        echo params.target
+        echo target
         echo params.hel
       }
     }
