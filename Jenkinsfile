@@ -7,6 +7,7 @@ pipeline{
         echo params.branchName
         echo params.commitMessage
     }
+ }    
     stage('Step 1'){
       when {
         expression { return params.target == "main" }
