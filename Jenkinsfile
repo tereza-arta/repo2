@@ -6,7 +6,7 @@ pipeline{
         echo "Hello from init stage"
       }
     }
-    stage('Step 1'){
+    /*stage('Step 1'){
       when {
         expression { return params.current_status == "closed" && params.merged == true && params.branch == "dev" }
       }
@@ -21,6 +21,6 @@ pipeline{
       steps{
         echo "step 2"
       }
-    }
+    }*/
   }
 }
