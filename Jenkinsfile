@@ -3,8 +3,9 @@ pipeline{
   stages {
     stage('Init stage'){
       steps{
-        echo "Hello from init stage.."
+        echo "Hello from init stage"
         echo params.hel
+        echo params.target_branch
       }
     }
     stage('Step 1'){
