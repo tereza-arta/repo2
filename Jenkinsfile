@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Print the values
-                    echo "Hello"
+                    echo "Hello..."
                     echo "Branch Name: ${params.branchName}"
                     echo "Commit Message: ${params.commitMessage}"
                 }
