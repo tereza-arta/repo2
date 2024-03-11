@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Print the valuesbrabranchName = refs/heads/mainbranchName = refs/heads/mainnchName = refs/heads/main
-                    echo "Hello from me.."
+                    echo "Hello from me...."
                     echo "Branch Name: ${params.branchName}"
                     echo "Commit Message: ${params.commitMessage}"
                 }
