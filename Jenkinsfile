@@ -5,6 +5,7 @@ pipeline{
       steps{
         echo "Hello from init stage"
         echo params.target
+        echo params.hel
       }
     }
     /*stage('Step 1'){
