@@ -4,19 +4,18 @@ pipeline{
     stage('Init stage'){
       steps{
         echo "Hello from init stage"
-        echo target
         echo params.hel
       }
     }
-    /*stage('Step 1'){
+    stage('Step 1'){
       when {
-        expression { return params.current_status == "closed" && params.merged == true && params.branch == "dev" }
+        expression { return params.target == "main" }
       }
       steps{
         echo "step 1"
       }
     }
-    stage('Step 2'){
+    /*stage('Step 2'){
       when {
         expression { return params.current_status == "closed" && params.merged == true && params.branch == "dev" }
       }
