@@ -4,9 +4,8 @@ pipeline{
     stage('Init stage'){
       steps{
         echo "Hello from init stage"
-        echo params.hel
-        echo "target branch is ${env.target_branch}"
-      }
+        echo params.branchName
+        echo params.commitMessage
     }
     stage('Step 1'){
       when {
