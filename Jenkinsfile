@@ -5,7 +5,7 @@ pipeline{
       steps{
         echo "Hello from init stage"
         echo params.hel
-        echo env.target_branch
+        echo "target branch is ${env.target_branch}"
       }
     }
     stage('Step 1'){
