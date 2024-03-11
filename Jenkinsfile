@@ -5,13 +5,9 @@ pipeline {
         stage('Print Webhook Values') {
             steps {
                 script {
-                    // Access values extracted from webhook payload
-                    def branchName = env.branchName
-                    def commitMessage = env.commitMessage
-
                     // Print the values
-                    echo "Branch Name: ${branchName}"
-                    echo "Commit Message: ${commitMessage}"
+                    echo "Branch Name: ${params.branchName}"
+                    echo "Commit Message: ${params.commitMessage}"
                 }
             }
         }
