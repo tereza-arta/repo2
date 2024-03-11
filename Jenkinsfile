@@ -3,7 +3,7 @@ pipeline{
   stages {
     stage('Init stage'){
       steps{
-        echo "Hello from init stage.."
+        echo "Hello from init stage"
         echo params.hel
       }
     }
