@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'docker_based_agent' }
 
     stages {
         stage('Init stage') {
@@ -11,7 +11,8 @@ pipeline {
         }
         stage('Build stage') {
             steps {
-                
+                echo "docker version is :"
+                echo "docker --version"
             }
         }
     }
