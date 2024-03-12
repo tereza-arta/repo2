@@ -12,6 +12,7 @@ pipeline{
         stage('Init') {
             steps {
                 script {
+                        echo "Hello from Init sage  of Jenkinsfile0"
                         gv = load "script.groovy"
                 }
             }
