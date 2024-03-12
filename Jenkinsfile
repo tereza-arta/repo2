@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Print the valuesbrabranchName = refs/heads/mainbranchName = refs/heads/mainnchName = refs/heads/main
-                    echo "Hello from me...... ... ... ... ..."
+                    echo "Hello from me...... ... ... ... ... ..."
                     echo "action is: " + env.action
                     echo "Source branch is " + env.source_branch
                     echo "Target branch is " + env.target_branch
