@@ -4,4 +4,6 @@ USER 0
 
 RUN apt update -y && apt install build-essential -y
 
-CMD ["echo", "Hello from dockerfile"]
+RUN g++ file.cpp -o file.gpp
+
+CMD ["./file.gpp"]
