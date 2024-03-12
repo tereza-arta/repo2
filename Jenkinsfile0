@@ -7,8 +7,8 @@ pipeline{
                     script: "git log --merges --first-parent origin/main | awk '/Merge pull request/{split(\$NF, arr, \"/\"); print arr[2]}' | head -1",
                     returnStdout: true
                 ).trim()
-        TARGET_BRANCH = sh(
-                    script: "git log --merges --first-parent origin/main | tail -n 1",
+        GIT_LOG = sh(
+                    script: "git log --merges --first-parent origin/main",
                     returnStdout: true
                 ).trim() 
     }
