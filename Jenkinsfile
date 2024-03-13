@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'node:20.11.1-alpine3.19' }
+        docker { image 'gradle:8.2.0-jdk17-alpine' }
     }
     stages {
         stage('Init stage') {
@@ -12,8 +12,8 @@ pipeline {
         }
         stage('Build stage') {
             steps {
-                echo "node version is: "
-                sh 'node --version'
+                echo "gradle version is: "
+                sh 'gradle --version'
                 echo "docker version is :"
                 sh 'docker --version'
                 sh 'docker build -t image_for_cpp:local .'
