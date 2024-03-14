@@ -1,12 +1,13 @@
 pipeline {
     agent {
-        docker { image 'node:20.11.1-alpine3.19' }
+        docker { image 'python:latest }
     }
     stages {
         stage('Init stage') {
             steps {
                 script {
                     echo "Hello from me...from Jenkinsfile"
+                    sh 'python file.py'
                 }
             }
         }
