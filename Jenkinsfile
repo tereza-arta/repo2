@@ -4,11 +4,11 @@ pipeline {
         stage('Init stage') {
             steps {
                 script {
-                    echo "Hello from me...from Jenkinsfile"
+                    echo "Hello from Jenkinsfile of repo2"
                 }
             }
         }
-        stage('Build stage') {
+      /*  stage('Build stage') {
             steps {
                 echo "gradle version is: "
                 sh 'gradle --version'
@@ -19,7 +19,7 @@ pipeline {
                 sh 'docker run --name container image_for_cpp:local'
                 echo "Exit from Jenkinsfile"
             }
-        }
+        }*/
     }
 }
        
