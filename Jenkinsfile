@@ -8,7 +8,7 @@ pipeline {
                 }
             }
         }
-      /*  stage('Build stage') {
+        /*stage('Build stage') {
             steps {
                 echo "gradle version is: "
                 sh 'gradle --version'
